@@ -12,3 +12,13 @@ export default function LoginPage() {
     </div>
   );
 }
+
+import { logout } from "@/lib/auth";
+
+export default function LogoutButton() {
+  return (
+    <button onClick={logout} className="bg-red-500 text-white px-4 py-2 rounded-md">
+      ログアウト
+    </button>
+  );
+}
